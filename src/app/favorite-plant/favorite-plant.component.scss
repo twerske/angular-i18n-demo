@@ -1,0 +1,11 @@
+.favorite-card {
+    height: calc(100vh - 124px);
+    margin: 10px;
+    overflow-y: auto;
+}
+
+img {
+    height: 400px;
+    max-height: 400px;
+    object-fit: cover;
+}

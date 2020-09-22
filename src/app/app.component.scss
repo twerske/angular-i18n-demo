@@ -1,0 +1,16 @@
+.menu-button {
+    text-transform: uppercase;
+}
+  
+.spacer {
+    flex: 1 1 auto;
+}
+
+.main-content {
+    display: flex;
+    background: #A5D6A7;
+}
+
+app-favorite-plant {
+    min-width: 40%;
+}

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-plants-i18n": {
+      "hosting": {
+        "plants-i18n": [
+          "angular-plants-i18n"
+        ]
+      }
+    }
+  }
+}

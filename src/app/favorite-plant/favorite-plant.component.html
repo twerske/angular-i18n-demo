@@ -1,0 +1,28 @@
+<mat-card *ngIf='plant' class="favorite-card">
+    <mat-card-header>
+      <mat-card-title>{{ favorite }}</mat-card-title>
+      <mat-card-subtitle>{{ plant.description }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ plant.imageUrl }}" alt="Photo of a plant">
+    <mat-card-content>
+      <p i18n>
+        Water: { plant.water, plural,
+          =0 {Rarely}
+          =1 {Once per week}
+          few {Every other day}
+          many {Every day}
+          other {Every {{ plant.water }} days}
+        }
+      </p>
+      <p i18n>
+        Location: { plant.placement, select, 
+          indoor {Indoors} 
+          outdoor {Outdoors} 
+          both {Anywhere}
+        }
+      </p>
+      <p>Dollars: {{ plant.cost | currency }} </p>
+      <p>Euros: {{ plant.cost | currency : 'EUR' : 'symbol' : '4.2-2' : locale }} </p>
+      <p>{{ plant.longDescription }}</p>
+    </mat-card-content>
+</mat-card>

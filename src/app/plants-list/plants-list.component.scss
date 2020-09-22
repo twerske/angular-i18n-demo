@@ -1,0 +1,12 @@
+.plant-container {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 64px);
+    // width: 80%;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.plant {
+    flex: 1 1 20%;
+}

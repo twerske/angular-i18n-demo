@@ -13,6 +13,13 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "nl": "src/locale/messages.nl.xlf",
+          "da": "src/locale/messages.da.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -22,6 +29,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "localize": true,
             "aot": true,
             "assets": [
               "src/favicon.ico",
@@ -60,6 +68,14 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "nl": {
+              "localize": ["nl"],
+              "baseHref": "/nl/"
+            },
+            "da": {
+              "localize": ["da"],
+              "baseHref": "/da/"
             }
           }
         },
@@ -71,6 +87,12 @@
           "configurations": {
             "production": {
               "browserTarget": "plants-i18n:build:production"
+            },
+            "nl": {
+              "browserTarget": "plants-i18n:build:nl"
+            },
+            "da": {
+              "browserTarget": "plants-i18n:build:da"
             }
           }
         },
@@ -121,8 +143,16 @@
               "devServerTarget": "plants-i18n:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "plants-i18n"
+    }
+  },
+  "defaultProject": "plants-i18n",
+  "cli": {
+    "analytics": "04d7f9e8-5ce9-4b12-ac5d-2da08d800097"
+  }
 }

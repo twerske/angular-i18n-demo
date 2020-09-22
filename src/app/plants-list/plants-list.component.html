@@ -1,0 +1,4 @@
+<div class="plant-container">
+    <app-plant-card class="plant" *ngFor="let plant of plants" (click)='this.selectPlant.emit(plant)' [plant]="plant"></app-plant-card>
+    <mat-progress-spinner *ngIf="plants.length==0" color="accent" mode="indeterminate"></mat-progress-spinner>
+</div>

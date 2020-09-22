@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="introductionHeader" datatype="html">
+        <source>
+    Information about Greenhouses on 
+    <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{ today | date : &apos;mediumDate&apos; : &apos;+0200&apos; : locale }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">An introduction header</note>
+        <note priority="1" from="meaning">site header</note>
+      </trans-unit>
+      <trans-unit id="69546972011858fc7154c0c00c71aeb85d806efc" datatype="html">
+        <source>
+        Water: <x id="ICU" equiv-text="{ plant.water, plural, =0 {...} =1 {...} few {...} many {...} other {...}}"/>
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/favorite-plant/favorite-plant.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d4b11f40b3f22b6fee5a1450c98c38b728ea7f0a" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {Rarely} =1 {Once per week} few {Every other day} many {Every day} other {Every <x id="INTERPOLATION" equiv-text="{{ plant.water }}"/> days} }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/favorite-plant/favorite-plant.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6bbe93501d8bf82b375b825d040b72bef1fcca3d" datatype="html">
+        <source>
+        Location: <x id="ICU" equiv-text="{ plant.placement, select, indoor {...} outdoor {...} both {...}}"/>
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/favorite-plant/favorite-plant.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1bc8b180d526cf22616e300b209f68cf3a4691fc" datatype="html">
+        <source>{VAR_SELECT, select, indoor {Indoors} outdoor {Outdoors} both {Anywhere} }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/favorite-plant/favorite-plant.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
