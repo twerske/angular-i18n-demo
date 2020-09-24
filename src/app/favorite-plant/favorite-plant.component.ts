@@ -16,7 +16,8 @@ export class FavoritePlantComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {}
 
+  // 👇 $localize in code example
   ngOnChanges(): void {
-    this.favorite = $localize `My favorite plant is ${this.plant?.name}!`;
+    this.favorite = $localize`My favorite plant is ${this.plant?.name}!`;
   }
 }

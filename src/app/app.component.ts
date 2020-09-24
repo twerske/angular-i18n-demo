@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { LOCALE_ID, Inject } from '@angular/core';
+import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core';
 import { Plant } from './Plant';
 
 @Component({
@@ -17,7 +16,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.today = new Date();
-    console.log(this.locale);
   }
 
   selectPlant(plant: Plant): void {

@@ -21,8 +21,7 @@ import '@angular/localize/init';
 import { loadTranslations } from '@angular/localize';
 
 loadTranslations({
-//   '1758567398247164407':
-//     'No, my favorite plant is REALLY: <x id="PH"/>!'
+  '1758567398247164407': 'My favorite plant is always the cactus!'
 });
 
 /***************************************************************************************************

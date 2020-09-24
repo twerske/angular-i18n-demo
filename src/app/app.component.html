@@ -1,11 +1,13 @@
 <mat-toolbar color="primary">
+  <!-- 👇 i18n in template example -->
   <h1 i18n="site header|An introduction header@@introductionHeader">
     Information about Greenhouses on 
+    <!-- 👇 DatePipe example -->
     <span>{{ today | date : 'mediumDate' : '+0200' : locale }}</span>
   </h1>
   <span class="spacer"></span>
     
-  <!-- 👇 below menu will help us change the LOCALE_ID at run-time. -->
+  <!-- 👇 below menu will help us change the locale at run-time. -->
   <button mat-button [matMenuTriggerFor]="menu" class="menu-button" matTooltip="Select a language locale">
     {{ locale }}
   </button>
